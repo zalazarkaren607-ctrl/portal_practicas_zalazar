@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal de prácticas Salta</title>
+    <title>Portal de Prácticas Salta</title>
 </head>
 <body>
     <ul style="list-style-type:none;">
@@ -34,7 +34,7 @@
 <dd>Sistema para gestion de base de datos.</dd>
 </dl>
 <table id="Plan de Estudio" border="1">
-    <caption></caption>
+    <caption>Materias de Semestre</caption>
 
     <thead>
         <th rowspan="">Materia</th>
@@ -108,15 +108,21 @@
 
     <input type="radio" id="oran" name="sede">
     <label for="oran">Orán</label>
-    <br>
-    <button type="submit">Enviar</button>
+    
     <br>
     <p>Tecnologias de Interes:</p>
     <input type="checkbox" id="html" name="tecnologia">
     <label for="html">HTML</label>
     <input type="checkbox" id="php" name="tecnologia">
     <label for="php">PHP</label>
+    <input type="checkbox" id="css" name="tecnologia">
+    <label for="css">CSS</label>
+    <input type="checkbox" id="python" name="tecnologia" checked>
+    <label for="python">Python</label>
     <br>
+    <label for="comentarios">Comentarios:</label>
+    <textarea id="comentarios" name="comentarios" rows="5" cols="40"></textarea>
+    
     <button type="submit">Enviar</button>
 </form>
 </body>
