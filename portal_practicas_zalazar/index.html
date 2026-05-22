@@ -7,18 +7,18 @@
 </head>
 <body>
     <ul style="list-style-type:none;">
-        <li>Institucion</li>
-        <li>Plan de estudio</li>
-        <li>Multimedia</li>
-        <li>Registro</li>
+        <li><a href="#Institucion">Institucion</a></li>
+        <li><a href="#Plan de Estudio">Plan de Estudio</a></li>
+        <li><a href="#Multimedia">Multimedia</a></li>
+        <li><a href="#Registro">Registro</a></li>
     </ul>
-    <h1>Cruz Roja Argentina</h1>
+    <h1 id="Institucion" >Cruz Roja Argentina</h1>
     <p>Cruz Roja Argentina es una asociación civil, humanitaria y de carácter voluntario, con presencia en el territorio argentino, y parte integrante del <em>Movimineto Internacional de la Cruz Roja </em> y de la Media Luna Roja, la red humanitaria más grande del mundo.</p>
     <h2>Filial Salta "Instituto Superior N° 8034" </h2>
     <p>Nuestra filial trabaja junto a la comunidad desde 1942. Cuenta con un Instituto Superior, área de voluntariado y primeros auxilios.Desde hace <strong>80 años</strong>  capacitamos miles de profesionales con profunda vocación y compromiso. Las carreras que dicta el Instituto Superior N° 8034 son Enfermería Profesional, las tecnicaturas en Instrumentación Quirúrgica, Radiología y Hemoterapia.</p>
     <h3>Capacitaciones en Primeros Auxilios y Nuestras Carreras</h3>
     <p>El primer sábado de cada más realizamos un curso certificado de primeros auxilios abierto a la comunidad.  El instituto Superior cuenta con cuatro carreras presenciales que tienen 3 años de duración:</p>
-    <ul style="list-style-type:none;">
+    <ul >
         <li>Tecnicatura superior en Instrumentación Quirúrgica.</li>
         <li>Enfermeria Profesional.</li>
         <li>TecnicaturaSuperior en Radiologia con orientacion en diagnostico por imagen.</li>
@@ -26,46 +26,98 @@
     </ul>
     
 <dl>
-<dt></dt>
-<dd></dd>
+<dt>HTML</dt>
+<dd>Lenguaje para crear paginas web.</dd>
+<dt>Python</dt>
+<dd>Lenguaje para desarrollo web.</dd>
+<dt>MySQL</dt>
+<dd>Sistema para gestion de base de datos.</dd>
 </dl>
-<table border="1">
+<table id="Plan de Estudio" border="1">
     <caption></caption>
 
     <thead>
         <th rowspan="">Materia</th>
         <th rowspan="">Profesor</th>
-        <th rowspan="">Carga Horaria</th> </th>
+        <th rowspan="">Carga Horaria</th> 
 
     </thead>
     <tbody rowspan="3" >
         <tr>
             <td>Anatomía Humana</td>
-            <td > juanita</td>
+            <td >Juan Gonzales</td>
             <td>6</td>
         </tr>
         <tr>
             <td>Bioquímica</td>
-            <td rowspan="">marcelo  </td>
+            <td rowspan="">Marcelo Romano </td>
             <td>6</td>
         </tr>
         <tr>
             <td>Tecnología de la Información y la Comunicación en Enfermería</td>
-            <td>Martin</td>
+            <td>Martin Perez</td>
             <td>3</td>
     </tr>
         <tr>
             <td>Antropología</td>
-            <td>José</td>
+            <td>Ana Vazquez</td>
             <td>6</td>
         </tr>
     </tbody>
 </table>
-<ol>
-    <li>Inscripción completa</li>
-    <li></li>
-    <li></li>
-    <li>Presentar requisitos</li>
+<ol reversed>
+    <li>Presentar la documentacion requerida.</li>
+    <li>Completar el formulario.</li>
+    <li>Elegir la institucion o empresa.</li>
+    <li>Asistir a la charla Informativa.</li>
+    <li>Regirtrarse en el sistema</li>
 </ol>
+<img id="Multimedia" src="images.png" alt="cruz-roja" width="300" height="200" loading="lazy">
+<video controls muted poster="portada.png"  width="500"> 
+    <source src="cruz_roja_promo.mp4" type="video/mp4">
+</video>
+<audio controls preload="none"> 
+    <source src="Cruz-Roja-Argentina.mp3" type="audio/mpeg">    
+</audio>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.1863973647846!2d-65.3985302!3d-24.7890701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc39a208aa669%3A0xccc4c10015b12324!2sCruz%20Roja%20Argentina%20-%20Filial%20Salta!5e0!3m2!1ses-419!2sar!4v1779419016278!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<form id="Registro" action="#" method="post">
+    <label for="nombre"> Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+        <br>
+    <label for="apellido" >Apellido:</label>
+    <input type="text" id="apellido" name="apellido" required>
+    <br>
+    <label for="dni" >DNI:</label>
+    <input type="text" id="dni" name="dni" required>
+    <br>
+    <label for="email" >Email:</label>  
+    <input type="email" id="email" name="email" required></input>
+    <br>
+    <label for="turno">Turno:</label>
+    <select id="turno" name="turno">
+        <option disabled selected>
+            Seleccione un Turno
+            </option>
+            <option>Mañana</option>
+            <option>Tarde</option>
+            <option>Noche</option>
+    </select>
+    <p>Sede:</p>
+    <input type="radio" id="salta" name="sede">
+    <label for="salta">Salta</label>
+
+    <input type="radio" id="oran" name="sede">
+    <label for="oran">Orán</label>
+    <br>
+    <button type="submit">Enviar</button>
+    <br>
+    <p>Tecnologias de Interes:</p>
+    <input type="checkbox" id="html" name="tecnologia">
+    <label for="html">HTML</label>
+    <input type="checkbox" id="php" name="tecnologia">
+    <label for="php">PHP</label>
+    <br>
+    <button type="submit">Enviar</button>
+</form>
 </body>
 </html>
